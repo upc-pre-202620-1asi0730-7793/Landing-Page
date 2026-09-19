@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title data-i18n="page.title">Noxway | Your safe path while the city sleeps</title>
+  <meta name="description" content="Digital safety and well-being platform by Noctiva for night-shift workers: safe route check-in, trusted contacts companion view, 24h map, and sleep health." data-i18n-meta="description">
+  <meta name="keywords" content="night-shift workers, night safety, occupational well-being, safe commute, 24h services, Lima, Noxway, Noctiva, trabajadores nocturnos, seguridad nocturna">
+  <meta name="author" content="Noctiva">
+
+  <meta property="og:title" content="Noxway | Tu camino seguro mientras la ciudad duerme">
+  <meta property="og:description" content="Plataforma de seguridad y bienestar para trabajadores nocturnos. Check-in de ruta, companion view y mapa 24h.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://noctiva-noxway.pe/">
+  <meta property="og:image" content="assets/images/hero-night-poster.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="assets/images/LogoNovctiva1.png">
+  <link rel="apple-touch-icon" href="assets/images/LogoNovctiva1.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#inicio" class="skip-to-content" data-i18n="a11y.skip">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+
+      <a href="#inicio" class="brand-link" aria-label="Ir al inicio de Noxway">
+        <div class="brand-row">
+          <img src="assets/images/LogoNovctiva1.png" alt="Noxway Logo" class="brand-icon-img">
+          <span class="brand-name">Noxway</span>
+        </div>
+        <span class="brand-tagline" data-i18n="nav.brand_tagline">by Noctiva</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <ul class="nav-links-list">
+          <li><a href="#inicio" class="nav-item-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="#trayecto" class="nav-item-link" data-i18n="nav.protocol">Protocol</a></li>
+          <li><a href="#mapa" class="nav-item-link" data-i18n="nav.ecosystem">Ecosystem</a></li>
+          <li><a href="#videos" class="nav-item-link" data-i18n="nav.videos">Videos</a></li>
+          <li><a href="#comunidad" class="nav-item-link" data-i18n="nav.testimonials">Testimonials</a></li>
+          <li><a href="#planes" class="nav-item-link" data-i18n="nav.pricing">Plans</a></li>
+          <li><a href="#faq" class="nav-item-link" data-i18n="nav.faq">FAQ</a></li>
+        </ul>
+
+        <div class="lang-switcher" role="group" aria-label="Select Language">
+          <button type="button" class="lang-btn active" data-lang="en_US" aria-pressed="true">EN</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang="es_419" aria-pressed="false">ES</button>
+        </div>
+
+        <a href="#registro" class="btn-nav-login" data-i18n="nav.register">Sign Up</a>
+      </nav>
+
+      <button class="hamburger-toggle" id="hamburger-btn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-drawer">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="mobile-nav-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menú móvil">
+
+    <div class="mobile-lang-row">
+      <span class="mobile-lang-label">Language:</span>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="en_US" aria-pressed="true">EN</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" class="lang-btn" data-lang="es_419" aria-pressed="false">ES</button>
+      </div>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li><a href="#inicio" class="mobile-nav-link" data-i18n="nav.home">Home</a></li>
+      <li><a href="#trayecto" class="mobile-nav-link" data-i18n="nav.protocol">Protocol</a></li>
+      <li><a href="#mapa" class="mobile-nav-link" data-i18n="nav.ecosystem">Ecosystem</a></li>
+      <li><a href="#videos" class="mobile-nav-link" data-i18n="nav.videos">Videos</a></li>
+      <li><a href="#comunidad" class="mobile-nav-link" data-i18n="nav.testimonials">Testimonials</a></li>
+      <li><a href="#planes" class="mobile-nav-link" data-i18n="nav.pricing">Plans</a></li>
+      <li><a href="#faq" class="mobile-nav-link" data-i18n="nav.faq">FAQ</a></li>
+    </ul>
+
+    <div class="mobile-action-buttons">
+      <a href="#registro" class="btn-mobile-login" data-i18n="nav.register">Sign Up</a>
+    </div>
+  </div>
+
+  <main id="inicio">
+    <section class="hero-section" aria-label="Presentación de Noxway">
+
+      <div class="hero-video-wrapper" aria-hidden="true">
+        <video
+          class="hero-video"
+          id="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/images/hero-night-poster.jpg"
+        >
+          <source src="assets/images/hero-night-city.webm" type="video/webm">
+          <img src="assets/images/hero-night-poster.jpg" alt="Calles de la ciudad de noche con tráfico" class="hero-video">
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+
+        <h1 class="hero-title">
+          <span data-i18n="hero.title_line1">Your safe path,</span><br class="hero-title-break">
+          <span class="hero-title-highlight" data-i18n="hero.title_line2">while the city sleeps.</span>
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          Active route check-in, smart incident detection, and a 24-hour open services network designed for night-shift workers and their loved ones’ peace of mind.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#planes" class="btn-hero btn-primary-hero" data-role-target="worker">
+            <span data-i18n="hero.cta_worker">Protect My Commute</span>
+            <svg class="btn-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="#registro" class="btn-hero btn-glass-hero" data-role-target="companion">
+            <span data-i18n="hero.cta_companion">I'm a Trusted Contact</span>
+          </a>
+        </div>
+
+        <a href="#trayecto" class="hero-scroll-indicator" aria-label="Desplazarse hacia el protocolo">
+          <div class="scroll-mouse" aria-hidden="true">
+            <span class="scroll-wheel"></span>
+          </div>
+          <span data-i18n="hero.scroll">Scroll down</span>
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- [PUNTO DE INSERCIÓN AVANCE 2] -->
+
+  </main>
+</body>
+</html>
