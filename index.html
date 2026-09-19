@@ -300,7 +300,193 @@
 
       </div>
     </section>
+<section id="videos" class="videos-section reveal-on-scroll" aria-labelledby="videos-title">
+      <div class="videos-container">
 
+        <div class="videos-header">
+          <span class="videos-tag" data-i18n="videos.tag">Noctiva / Multimedia Showcase</span>
+          <h2 id="videos-title" class="videos-title">
+            <span data-i18n="videos.title_line1">Engineering in action:</span><br class="videos-title-break">
+            <span class="videos-title-highlight" data-i18n="videos.title_line2">Platform & Team Videos.</span>
+          </h2>
+          <p class="videos-subtitle" data-i18n="videos.subtitle">
+            Discover how Noxway works in real scenarios and meet the software engineering team behind this social-impact initiative.
+          </p>
+
+          <div class="videos-tabs" role="tablist" aria-label="Select Video Presentation">
+            <button type="button" class="video-tab-btn active" id="tab-video-product" role="tab" aria-selected="true" aria-controls="panel-video-product">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="vtab-icon" aria-hidden="true">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span data-i18n="videos.tab_product">About the Product (Demo)</span>
+            </button>
+            <button type="button" class="video-tab-btn" id="tab-video-team" role="tab" aria-selected="false" aria-controls="panel-video-team">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="vtab-icon" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <span data-i18n="videos.tab_team">About the Team (Engineering)</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="videos-content-wrapper">
+
+          <article class="video-display-panel active" id="panel-video-product" role="tabpanel" aria-labelledby="tab-video-product">
+            <div class="video-player-box">
+              <div class="video-embed-container">
+                <iframe
+                  class="video-iframe"
+                  src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+                  title="Noxway - Video About the Product"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <div class="video-meta-bar">
+                <div class="meta-left">
+                  <span class="video-badge" data-i18n="videos.prod_badge">Official Product Tour</span>
+                  <span class="video-duration" data-i18n="videos.prod_time">Duration: 2 min 45 sec</span>
+                </div>
+                <div class="meta-links">
+                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="video-ext-link" data-i18n="videos.prod_watch_yt">Watch on YouTube</a>
+                  <span class="meta-sep" aria-hidden="true">·</span>
+                  <a href="https://web.microsoftstream.com" target="_blank" rel="noopener noreferrer" class="video-ext-link" data-i18n="videos.prod_watch_stream">Microsoft Stream</a>
+                </div>
+              </div>
+            </div>
+            <div class="video-details-box">
+              <h3 class="video-card-title" data-i18n="videos.prod_title">Noxway: End-to-End Safety for Night-Shift Workers</h3>
+              <p class="video-card-desc" data-i18n="videos.prod_desc">
+                A comprehensive overview of Noxway’s value proposition, safe-trip check-in workflows, real-time companion view, and verified 24h nighttime points of interest in Lima.
+              </p>
+            </div>
+          </article>
+
+          <article class="video-display-panel" id="panel-video-team" role="tabpanel" aria-labelledby="tab-video-team" hidden>
+            <div class="video-player-box">
+              <div class="video-embed-container">
+                <iframe
+                  class="video-iframe"
+                  src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+                  title="Noxway - Video About the Team"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <div class="video-meta-bar">
+                <div class="meta-left">
+                  <span class="video-badge team-badge-color" data-i18n="videos.team_badge">Academic & Agile Retrospective</span>
+                  <span class="video-duration" data-i18n="videos.team_time">Duration: 5 min 15 sec</span>
+                </div>
+                <div class="meta-links">
+                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="video-ext-link" data-i18n="videos.team_watch_yt">Watch on YouTube</a>
+                  <span class="meta-sep" aria-hidden="true">·</span>
+                  <a href="https://web.microsoftstream.com" target="_blank" rel="noopener noreferrer" class="video-ext-link" data-i18n="videos.team_watch_stream">Microsoft Stream</a>
+                </div>
+              </div>
+            </div>
+            <div class="video-details-box">
+              <h3 class="video-card-title" data-i18n="videos.team_title">Team Noctiva: Process, Values & ABET Outcome 3</h3>
+              <p class="video-card-desc" data-i18n="videos.team_desc">
+                Meet the Noctiva engineering team. Learn about our design thinking process, Lean UX experiments, and collective commitment to user well-being.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="comunidad" class="testimonials-section reveal-on-scroll" aria-labelledby="testimonials-tag-title">
+      <div class="testimonials-container">
+
+        <div class="testimonials-left-col">
+          <span id="testimonials-tag-title" class="testimonials-tag" data-i18n="testimonials.tag">TESTIMONIALS / VOICES OF THE NIGHT</span>
+
+          <div class="testimonials-nav-list" role="tablist" aria-label="Seleccionar testimonio">
+
+            <button class="testimonial-tab-btn active" role="tab" aria-selected="true" aria-controls="testimony-panel" data-index="0" id="tab-0">
+              <span class="tab-index">01</span>
+              <div class="tab-info">
+                <span class="tab-name">Jorge Luis Huamán</span>
+                <span class="tab-role" id="testimony-role-0">Seguridad privada · 38 años</span>
+              </div>
+            </button>
+
+            <button class="testimonial-tab-btn" role="tab" aria-selected="false" aria-controls="testimony-panel" data-index="1" id="tab-1">
+              <span class="tab-index">02</span>
+              <div class="tab-info">
+                <span class="tab-name">Rosa Elena Paredes</span>
+                <span class="tab-role" id="testimony-role-1">Contacto de confianza · 48 años</span>
+              </div>
+            </button>
+
+            <button class="testimonial-tab-btn" role="tab" aria-selected="false" aria-controls="testimony-panel" data-index="2" id="tab-2">
+              <span class="tab-index">03</span>
+              <div class="tab-info">
+                <span class="tab-name">Valeria Ríos</span>
+                <span class="tab-role" id="testimony-role-2">Enfermera de guardia · 29 años</span>
+              </div>
+            </button>
+
+          </div>
+
+          <div class="testimonials-controls" aria-label="Controles de testimonios">
+            <button class="btn-testimonial-nav" id="prev-testimony-btn" aria-label="Testimonio anterior" data-i18n-aria-label="testimonials.prev">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
+            </button>
+            <span class="testimonials-counter" id="testimony-counter" aria-hidden="true">01 / 03</span>
+            <button class="btn-testimonial-nav" id="next-testimony-btn" aria-label="Testimonio siguiente" data-i18n-aria-label="testimonials.next">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="testimonials-right-col" id="testimony-panel" role="tabpanel" aria-labelledby="tab-0" aria-live="polite">
+
+          <div class="giant-watermark-number" id="testimony-watermark" aria-hidden="true">01</div>
+
+          <blockquote class="testimony-quote-wrapper">
+            <p class="testimony-quote" id="testimony-quote">
+              «Antes salía a las 6:00 a.m. con el temor del paradero desierto. Ahora sé qué calles están iluminadas y regreso a casa sin miedo.»
+            </p>
+          </blockquote>
+
+          <div class="testimony-author-meta" id="testimony-meta">
+            <div class="author-details">
+              <h3 class="author-name" id="author-name">Jorge Luis Huamán</h3>
+              <p class="author-location" id="author-location">Ruta habitual: Los Olivos ⇄ Cercado de Lima</p>
+            </div>
+            <div class="author-metric">
+              <span class="metric-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </span>
+              <span class="metric-text" id="author-metric">100% de trayectos nocturnos confirmados a tiempo</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    
+
+
+    
   </main>
 </body>
 </html>
