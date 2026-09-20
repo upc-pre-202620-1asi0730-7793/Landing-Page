@@ -300,7 +300,8 @@
 
       </div>
     </section>
-<section id="videos" class="videos-section reveal-on-scroll" aria-labelledby="videos-title">
+
+    <section id="videos" class="videos-section reveal-on-scroll" aria-labelledby="videos-title">
       <div class="videos-container">
 
         <div class="videos-header">
@@ -483,145 +484,423 @@
 
       </div>
     </section>
-    <!-- ==================== SECCIÓN PLANES / PRICING ==================== -->
+
     <section id="planes" class="pricing-section reveal-on-scroll" aria-labelledby="pricing-title">
       <div class="pricing-container">
 
-        <div class="pricing-header-wrapper">
-          <span class="pricing-tag" data-i18n="pricing.tag">Subscription Plans & Coverage</span>
-          <h2 id="pricing-title" class="pricing-title">
-            <span data-i18n="pricing.title_line1">Tailored protection</span><br class="pricing-title-break">
-            <span class="pricing-title-highlight" data-i18n="pricing.title_line2">for every night shift.</span>
-          </h2>
-          <p class="pricing-subtitle" data-i18n="pricing.subtitle">
-            Flexible plans designed for individual night workers, families, and enterprise security fleets.
-          </p>
+        <div class="pricing-header">
+          <div class="pricing-header-left">
+            <span class="pricing-tag" data-i18n="pricing.tag">NOXWAY / PLANS 2026</span>
+            <h2 id="pricing-title" class="pricing-title">
+              <span data-i18n="pricing.title_line1">Tailored protection,</span><br class="pricing-title-break">
+              <span class="pricing-title-highlight" data-i18n="pricing.title_line2">every single night.</span>
+            </h2>
+          </div>
+          <div class="pricing-header-right">
+
+            <div class="billing-toggle-wrapper" role="group" aria-label="Periodo de facturación">
+              <button type="button" class="billing-toggle-btn active" id="billing-monthly-btn" aria-pressed="true" data-i18n="pricing.monthly">
+                Monthly
+              </button>
+              <button type="button" class="billing-toggle-btn" id="billing-annual-btn" aria-pressed="false">
+                <span data-i18n="pricing.annual">Annual</span>
+                <span class="discount-badge" aria-label="Save 25%" data-i18n="pricing.discount">-25%</span>
+              </button>
+            </div>
+            <p class="billing-note" data-i18n="pricing.billing_note">No lock-in contracts. Switch or cancel your subscription at any time.</p>
+          </div>
         </div>
 
-        <div class="pricing-cards-grid">
+        <div class="pricing-ledger" role="radiogroup" aria-label="Planes de suscripción de Noxway">
 
-          <!-- Plan 1: Sentinel Lite -->
-          <article class="pricing-card" tabindex="0">
-            <div class="pricing-card-header">
-              <span class="plan-badge" data-i18n="pricing.plan1_badge">Essential</span>
-              <h3 class="plan-title" data-i18n="pricing.plan1_title">Sentinel Lite</h3>
-              <div class="plan-price">
-                <span class="currency">S/</span>
-                <span class="amount">0</span>
-                <span class="period" data-i18n="pricing.free_forever">/ forever free</span>
+          <article
+            class="pricing-row"
+            role="radio"
+            aria-checked="false"
+            tabindex="0"
+            data-plan-id="esencial"
+            data-plan-name="Essential Plan"
+            data-price-monthly="S/. 0"
+            data-price-annual="S/. 0"
+            data-period-monthly="/ month"
+            data-period-annual="/ year"
+            data-subtext-monthly="Free forever"
+            data-subtext-annual="Free forever"
+          >
+            <div class="pricing-row-line" aria-hidden="true"></div>
+
+            <div class="row-col-identity">
+              <div class="plan-name-row">
+                <span class="plan-indicator-num">01</span>
+                <h3 class="plan-name" data-i18n="pricing.plan1_name">Essential Plan</h3>
               </div>
-              <p class="plan-description" data-i18n="pricing.plan1_desc">
-                Basic route monitoring and emergency alerts for independent workers.
-              </p>
+              <p class="plan-desc" data-i18n="pricing.plan1_desc">Individual companion mode to begin commuting with reassurance during your night shifts.</p>
             </div>
 
-            <ul class="plan-features-list">
-              <li>
-                <i class="fa-solid fa-check feature-icon" aria-hidden="true"></i>
-                <span data-i18n="pricing.plan1_f1">Active commute check-in</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-check feature-icon" aria-hidden="true"></i>
-                <span data-i18n="pricing.plan1_f2">1 trusted contact connection</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-check feature-icon" aria-hidden="true"></i>
-                <span data-i18n="pricing.plan1_f3">Access to 24h Community Map</span>
-              </li>
-              <li class="feature-disabled">
-                <i class="fa-solid fa-xmark feature-icon" aria-hidden="true"></i>
-                <span data-i18n="pricing.plan1_f4">Smart anomaly detection</span>
-              </li>
-            </ul>
+            <div class="row-col-price">
+              <div class="price-wrapper">
+                <span class="price-currency-value">S/. 0</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <span class="price-subtext" data-i18n="pricing.plan1_sub_m">Free forever</span>
+            </div>
 
-            <div class="pricing-card-cta">
-              <a href="#registro" class="btn-plan btn-secondary-plan" data-plan="Sentinel Lite" data-i18n="pricing.cta_lite">Get Started Free</a>
+            <div class="row-col-features">
+              <ul class="features-list">
+                <li class="feature-item">
+                  <svg class="feature-check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span data-i18n="pricing.plan1_f1">Commute check-in with 1 trusted contact</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span data-i18n="pricing.plan1_f2">Full access to 24h Community Map</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span data-i18n="pricing.plan1_f3">Instant manual SOS emergency trigger</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="row-col-action">
+              <div class="radio-selector-circle" aria-hidden="true">
+                <span class="selector-dot"></span>
+              </div>
             </div>
           </article>
 
-          <!-- Plan 2: Sentinel Pro (Featured) -->
-          <article class="pricing-card featured-plan" tabindex="0">
-            <div class="featured-ribbon" data-i18n="pricing.most_popular">Most Popular</div>
-            <div class="pricing-card-header">
-              <span class="plan-badge badge-highlight" data-i18n="pricing.plan2_badge">Recommended</span>
-              <h3 class="plan-title" data-i18n="pricing.plan2_title">Sentinel Pro</h3>
-              <div class="plan-price">
-                <span class="currency">S/</span>
-                <span class="amount">19</span>
-                <span class="period" data-i18n="pricing.per_month">/ month</span>
+          <article
+            class="pricing-row selected"
+            role="radio"
+            aria-checked="true"
+            tabindex="0"
+            data-plan-id="centinela-pro"
+            data-plan-name="Sentinel Pro"
+            data-price-monthly="S/. 12"
+            data-price-annual="S/. 9.20"
+            data-period-monthly="/ month"
+            data-period-annual="/ month"
+            data-subtext-monthly="Standard monthly billing"
+            data-subtext-annual="Billed S/. 110 annually (-25%)"
+          >
+            <div class="pricing-row-line" aria-hidden="true"></div>
+
+            <div class="row-col-identity">
+              <div class="plan-name-row">
+                <span class="plan-indicator-num">02</span>
+                <h3 class="plan-name" data-i18n="pricing.plan2_name">Sentinel Pro</h3>
+                <span class="plan-badge-popular" data-i18n="pricing.plan2_badge">Recommended</span>
               </div>
-              <p class="plan-description" data-i18n="pricing.plan2_desc">
-                Complete protection suite with AI anomaly detection and unlimited contacts.
-              </p>
+              <p class="plan-desc" data-i18n="pricing.plan2_desc">Priority active monitoring for workers who walk dark, deserted streets on a daily basis.</p>
             </div>
 
-            <ul class="plan-features-list">
-              <li>
-                <i class="fa-solid fa-check feature-icon" aria-hidden="true"></i>
-                <span data-i18n="pricing.plan2_f1">All Sentinel Lite features</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-check feature-icon" aria-hidden="true"></i>
-                <span data-i18n="pricing.plan2_f2">Up to 5 trusted contacts</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-check feature-icon" aria-hidden="true"></i>
-                <span data-i18n="pricing.plan2_f3">Smart AI delay & anomaly detection</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-check feature-icon" aria-hidden="true"></i>
-                <span data-i18n="pricing.plan2_f4">Sleep & rest health tracker</span>
-              </li>
-            </ul>
+            <div class="row-col-price">
+              <div class="price-wrapper">
+                <span class="price-currency-value">S/. 12</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <span class="price-subtext" data-i18n="pricing.plan2_sub_m">Standard monthly billing</span>
+            </div>
 
-            <div class="pricing-card-cta">
-              <a href="#registro" class="btn-plan btn-primary-plan" data-plan="Sentinel Pro" data-i18n="pricing.cta_pro">Start 14-Day Trial</a>
+            <div class="row-col-features">
+              <ul class="features-list">
+                <li class="feature-item">
+                  <svg class="feature-check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span data-i18n="pricing.plan2_f1">Smart route deviation & delay detection</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span data-i18n="pricing.plan2_f2">Unlimited trusted contacts with Companion View</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span data-i18n="pricing.plan2_f3">Automated WhatsApp alerts without app install</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="row-col-action">
+              <div class="radio-selector-circle" aria-hidden="true">
+                <span class="selector-dot"></span>
+              </div>
             </div>
           </article>
 
-          <!-- Plan 3: Enterprise Shield -->
-          <article class="pricing-card" tabindex="0">
-            <div class="pricing-card-header">
-              <span class="plan-badge" data-i18n="pricing.plan3_badge">Corporate</span>
-              <h3 class="plan-title" data-i18n="pricing.plan3_title">Enterprise Shield</h3>
-              <div class="plan-price">
-                <span class="amount-custom" data-i18n="pricing.custom_price">Custom</span>
+          <article
+            class="pricing-row"
+            role="radio"
+            aria-checked="false"
+            tabindex="0"
+            data-plan-id="cuadrilla-familiar"
+            data-plan-name="Family & Crew"
+            data-price-monthly="S/. 25"
+            data-price-annual="S/. 20"
+            data-period-monthly="/ month"
+            data-period-annual="/ month"
+            data-subtext-monthly="Shared monthly billing"
+            data-subtext-annual="Billed S/. 240 annually (-20%)"
+          >
+            <div class="pricing-row-line" aria-hidden="true"></div>
+
+            <div class="row-col-identity">
+              <div class="plan-name-row">
+                <span class="plan-indicator-num">03</span>
+                <h3 class="plan-name" data-i18n="pricing.plan3_name">Family & Crew</h3>
               </div>
-              <p class="plan-description" data-i18n="pricing.plan3_desc">
-                Turnkey safety & well-being management for nocturnal enterprise staff fleets.
-              </p>
+              <p class="plan-desc" data-i18n="pricing.plan3_desc">Shared protection for healthcare teams, security guard squads, or worker family units.</p>
             </div>
 
-            <ul class="plan-features-list">
-              <li>
-                <i class="fa-solid fa-check feature-icon" aria-hidden="true"></i>
-                <span data-i18n="pricing.plan3_f1">Unlimited employee accounts</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-check feature-icon" aria-hidden="true"></i>
-                <span data-i18n="pricing.plan3_f2">Centralized HR monitoring dashboard</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-check feature-icon" aria-hidden="true"></i>
-                <span data-i18n="pricing.plan3_f3">Dedicated 24/7 incident response line</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-check feature-icon" aria-hidden="true"></i>
-                <span data-i18n="pricing.plan3_f4">Personal accident insurance coverage</span>
-              </li>
-            </ul>
+            <div class="row-col-price">
+              <div class="price-wrapper">
+                <span class="price-currency-value">S/. 25</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <span class="price-subtext" data-i18n="pricing.plan3_sub_m">Shared monthly billing</span>
+            </div>
 
-            <div class="pricing-card-cta">
-              <a href="#registro" class="btn-plan btn-secondary-plan" data-plan="Enterprise Shield" data-i18n="pricing.cta_enterprise">Contact Sales</a>
+            <div class="row-col-features">
+              <ul class="features-list">
+                <li class="feature-item">
+                  <svg class="feature-check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span data-i18n="pricing.plan3_f1">Up to 5 active worker profiles in sync</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span data-i18n="pricing.plan3_f2">Priority dispatch link with Lima city patrols</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-check" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span data-i18n="pricing.plan3_f3">Shared sleep tracker and group route reports</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="row-col-action">
+              <div class="radio-selector-circle" aria-hidden="true">
+                <span class="selector-dot"></span>
+              </div>
             </div>
           </article>
 
+        </div>
+
+        <div class="pricing-summary-bar" aria-live="polite">
+          <div class="summary-info">
+            <span class="summary-label" data-i18n="pricing.summary_label">Selected plan:</span>
+            <span class="summary-plan-name" id="summary-plan-name">Sentinel Pro (S/. 12 / month)</span>
+          </div>
+          <a href="#registro" class="btn-pricing-cta" id="btn-pricing-cta">
+            <span id="pricing-cta-text">Get Started with Sentinel Pro</span>
+            <svg class="cta-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
         </div>
 
       </div>
     </section>
-    <!-- Parte5 -->
-<section id="registro" class="contact-section reveal-on-scroll" aria-labelledby="contact-section-title">
+
+    <section id="faq" class="faq-section reveal-on-scroll" aria-labelledby="faq-title">
+      <div class="faq-container">
+
+        <div class="faq-left-col">
+          <div class="faq-left-header">
+            <span class="faq-tag" data-i18n="faq.tag">NOXWAY / NIGHT FAQ</span>
+            <h2 id="faq-title" class="faq-title">
+              <span data-i18n="faq.title_line1">Clear answers,</span><br class="faq-title-break">
+              <span class="faq-title-highlight" data-i18n="faq.title_line2">zero fine print.</span>
+            </h2>
+            <p class="faq-desc" data-i18n="faq.desc">
+              Co-designed with Lima’s security guards, nurses, and delivery riders. Absolute transparency for every kilometer of your journey.
+            </p>
+          </div>
+
+          <div class="faq-trust-meta" aria-label="Garantías de seguridad de Noxway">
+            <div class="trust-meta-item">
+              <span class="trust-number">01</span>
+              <div class="trust-text">
+                <span class="trust-title" data-i18n="faq.trust1_title">End-to-End Encryption</span>
+                <span class="trust-sub" data-i18n="faq.trust1_sub">Your coordinates are never sold or rented to advertisers.</span>
+              </div>
+            </div>
+            <div class="trust-meta-item">
+              <span class="trust-number">02</span>
+              <div class="trust-text">
+                <span class="trust-title" data-i18n="faq.trust2_title">100% Ad-Free Experience</span>
+                <span class="trust-sub" data-i18n="faq.trust2_sub">No tracking cookies or disruptive promotional banners.</span>
+              </div>
+            </div>
+            <div class="trust-meta-item">
+              <span class="trust-number">03</span>
+              <div class="trust-text">
+                <span class="trust-title" data-i18n="faq.trust3_title">District Community Network</span>
+                <span class="trust-sub" data-i18n="faq.trust3_sub">Continuous 24/7 collaborative verification.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-right-col">
+          <div class="faq-accordion" role="presentation">
+
+            <article class="faq-item">
+              <button
+                type="button"
+                class="faq-question-btn"
+                id="faq-btn-1"
+                aria-expanded="false"
+                aria-controls="faq-panel-1"
+              >
+                <span class="faq-item-num">01</span>
+                <span class="faq-question-text" data-i18n="faq.q1">Does Noxway track my GPS location 24/7 or only during my active commute?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">
+                  <span class="icon-line horizontal"></span>
+                  <span class="icon-line vertical"></span>
+                </span>
+              </button>
+              <div class="faq-answer-panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" hidden>
+                <div class="faq-panel-inner">
+                  <span class="panel-watermark-num" aria-hidden="true">01</span>
+                  <p class="faq-answer-text" data-i18n="faq.a1">
+                    Your privacy is non-negotiable. Monitoring is ONLY active when you manually trigger your check-in upon clocking out and automatically shuts down the second you confirm safe arrival at your home.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button
+                type="button"
+                class="faq-question-btn"
+                id="faq-btn-2"
+                aria-expanded="false"
+                aria-controls="faq-panel-2"
+              >
+                <span class="faq-item-num">02</span>
+                <span class="faq-question-text" data-i18n="faq.q2">Do my trusted contacts need to install an app to accompany me?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">
+                  <span class="icon-line horizontal"></span>
+                  <span class="icon-line vertical"></span>
+                </span>
+              </button>
+              <div class="faq-answer-panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
+                <div class="faq-panel-inner">
+                  <span class="panel-watermark-num" aria-hidden="true">02</span>
+                  <p class="faq-answer-text" data-i18n="faq.a2">
+                    No app installation or payment is required for your companions. They receive an encrypted web view link via WhatsApp/SMS that opens seamlessly on any mobile or desktop browser without registering.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button
+                type="button"
+                class="faq-question-btn"
+                id="faq-btn-3"
+                aria-expanded="false"
+                aria-controls="faq-panel-3"
+              >
+                <span class="faq-item-num">03</span>
+                <span class="faq-question-text" data-i18n="faq.q3">What happens if my phone runs out of battery or loses cellular signal on my route?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">
+                  <span class="icon-line horizontal"></span>
+                  <span class="icon-line vertical"></span>
+                </span>
+              </button>
+              <div class="faq-answer-panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
+                <div class="faq-panel-inner">
+                  <span class="panel-watermark-num" aria-hidden="true">03</span>
+                  <p class="faq-answer-text" data-i18n="faq.a3">
+                    Noxway incorporates signal-loss tolerance buffers tuned for Lima’s topography. If no activity is received after your ETA expires, the system alerts your contacts sharing the last verified GPS location and elapsed time.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button
+                type="button"
+                class="faq-question-btn"
+                id="faq-btn-4"
+                aria-expanded="false"
+                aria-controls="faq-panel-4"
+              >
+                <span class="faq-item-num">04</span>
+                <span class="faq-question-text" data-i18n="faq.q4">How are 24-hour businesses and stops verified on the Community Map?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">
+                  <span class="icon-line horizontal"></span>
+                  <span class="icon-line vertical"></span>
+                </span>
+              </button>
+              <div class="faq-answer-panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" hidden>
+                <div class="faq-panel-inner">
+                  <span class="panel-watermark-num" aria-hidden="true">04</span>
+                  <p class="faq-answer-text" data-i18n="faq.a4">
+                    The map combines real-time ratings from verified night workers with operational validations of 24h services (on-duty drugstores, illuminated fuel stations, and local municipal security booths).
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button
+                type="button"
+                class="faq-question-btn"
+                id="faq-btn-5"
+                aria-expanded="false"
+                aria-controls="faq-panel-5"
+              >
+                <span class="faq-item-num">05</span>
+                <span class="faq-question-text" data-i18n="faq.q5">Does the mobile application consume high battery or mobile data during the night?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">
+                  <span class="icon-line horizontal"></span>
+                  <span class="icon-line vertical"></span>
+                </span>
+              </button>
+              <div class="faq-answer-panel" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5" hidden>
+                <div class="faq-panel-inner">
+                  <span class="panel-watermark-num" aria-hidden="true">05</span>
+                  <p class="faq-answer-text" data-i18n="faq.a5">
+                    No. Noxway uses lightweight pulse telemetry using under 15 megabytes per month. Energy optimization ensures battery drain remains under 3% over an 8-to-12 hour work shift.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button
+                type="button"
+                class="faq-question-btn"
+                id="faq-btn-6"
+                aria-expanded="false"
+                aria-controls="faq-panel-6"
+              >
+                <span class="faq-item-num">06</span>
+                <span class="faq-question-text" data-i18n="faq.q6">Does the service operate in all districts across Lima and Callao?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">
+                  <span class="icon-line horizontal"></span>
+                  <span class="icon-line vertical"></span>
+                </span>
+              </button>
+              <div class="faq-answer-panel" id="faq-panel-6" role="region" aria-labelledby="faq-btn-6" hidden>
+                <div class="faq-panel-inner">
+                  <span class="panel-watermark-num" aria-hidden="true">06</span>
+                  <p class="faq-answer-text" data-i18n="faq.a6">
+                    Yes. Coverage encompasses all districts of Metropolitan Lima and the Constitutional Province of Callao, with high-density crowdsourced checkpoints in Lima North, Lima South, Lima East, and Downtown Lima.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="registro" class="contact-section reveal-on-scroll" aria-labelledby="contact-section-title">
       <div class="contact-container">
 
         <div class="contact-left-col">
