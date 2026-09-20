@@ -484,9 +484,267 @@
       </div>
     </section>
     
+    <!-- Parte5 -->
+<section id="registro" class="contact-section reveal-on-scroll" aria-labelledby="contact-section-title">
+      <div class="contact-container">
 
+        <div class="contact-left-col">
+          <div class="contact-left-header">
+            <span class="contact-tag" data-i18n="contact.tag">NOCTIVA / 24H ACTIVE NETWORK</span>
+            <h2 id="contact-section-title" class="contact-title">
+              <span class="title-line-mask"><span class="title-line" data-i18n="contact.title_line1">Let's walk together</span></span>
+              <span class="title-line-mask"><span class="title-line title-highlight" data-i18n="contact.title_line2">while the city sleeps.</span></span>
+            </h2>
+            <p class="contact-desc" data-i18n="contact.desc">
+              Get prioritized early access to our platform and secure every step of your nighttime commute.
+            </p>
+          </div>
 
-    
+          <div class="contact-watermark-text" aria-hidden="true">NOXWAY</div>
+        </div>
+
+        <div class="contact-divider" aria-hidden="true"></div>
+
+        <div class="contact-right-col">
+          <form class="contact-linear-form" id="contact-form" novalidate>
+
+            <div class="linear-field-group">
+              <span class="field-number">01</span>
+              <div class="field-input-wrapper">
+                <label for="full-name" class="linear-label" data-i18n="contact.name_label">Full Name</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="fullName"
+                  class="linear-input"
+                  placeholder="e.g., Jorge Luis Huamán"
+                  data-i18n-placeholder="contact.name_ph"
+                  required
+                  autocomplete="name"
+                >
+                <div class="linear-progress-line" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <div class="linear-field-group">
+              <span class="field-number">02</span>
+              <div class="field-input-wrapper">
+                <label for="contact-info" class="linear-label" data-i18n="contact.info_label">Mobile Phone or Email</label>
+                <input
+                  type="text"
+                  id="contact-info"
+                  name="contactInfo"
+                  class="linear-input"
+                  placeholder="user@example.com or 987 654 321"
+                  data-i18n-placeholder="contact.info_ph"
+                  required
+                  autocomplete="email"
+                >
+                <div class="linear-progress-line" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <div class="linear-field-group">
+              <span class="field-number">03</span>
+              <div class="field-input-wrapper">
+                <label for="user-profile-role" class="linear-label" data-i18n="contact.role_label">What is your role?</label>
+                <div class="select-wrapper">
+                  <select id="user-profile-role" name="role" class="linear-select" required>
+                    <option value="" disabled selected data-i18n="contact.role_default">Select your profile...</option>
+                    <option value="worker" data-i18n="contact.role_worker">I am a night-shift worker (security, health, delivery, etc.)</option>
+                    <option value="companion" data-i18n="contact.role_companion">I am a trusted contact (family member or partner)</option>
+                  </select>
+                  <svg class="select-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="6 9 12 15 18 9"/>
+                  </svg>
+                </div>
+                <div class="linear-progress-line" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <div class="form-plan-pill" id="form-plan-pill">
+              <span class="plan-pill-dot" aria-hidden="true"></span>
+              <span><span data-i18n="contact.plan_pill">Requesting access: </span><strong id="form-plan-label">Sentinel Pro</strong></span>
+            </div>
+            <input type="hidden" id="selected-plan-input" name="selectedPlan" value="Sentinel Pro">
+
+            <button type="submit" class="btn-linear-submit">
+              <span data-i18n="contact.submit">Join the Safe Network</span>
+              <svg class="submit-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+
+            <div class="contact-microtext">
+              <span class="microtext-item">
+                <span class="microtext-dot" aria-hidden="true"></span>
+                <span data-i18n="contact.micro1">Active 24-hour monitoring</span>
+              </span>
+              <span class="microtext-separator" aria-hidden="true">·</span>
+              <span class="microtext-item" data-i18n="contact.micro2">Instant validation & response</span>
+            </div>
+
+            <div class="form-live-feedback" id="form-feedback" aria-live="polite"></div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+
+      <div class="footer-top-row">
+
+        <div class="footer-brand-col">
+          <div class="footer-brand">
+            <img src="assets/images/LogoNovctiva1.png" alt="Noxway Logo" class="footer-brand-img">
+            <div style="display: flex; flex-direction: column;">
+              <span class="footer-logo">Noxway</span>
+              <span class="footer-brand-badge" data-i18n="footer.brand_tagline">by Noctiva</span>
+            </div>
+          </div>
+          <p class="footer-tagline" data-i18n="footer.brand_desc">
+            Comprehensive nighttime safety ecosystem, active commute monitoring, and 24h community network for the workforce keeping Metropolitan Lima alive.
+          </p>
+
+          <div class="footer-social-links" aria-label="Redes sociales oficiales de Noxway">
+            <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram oficial de Noxway" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com" class="social-icon-btn" aria-label="LinkedIn oficial de Noxway" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com" class="social-icon-btn" aria-label="X (Twitter) oficial de Noxway" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook oficial de Noxway" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com" class="social-icon-btn" aria-label="Repositorio GitHub oficial de Noxway" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title" data-i18n="footer.col_nav">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#inicio" data-i18n="nav.home">Home</a></li>
+            <li><a href="#trayecto" data-i18n="nav.protocol">Protocol</a></li>
+            <li><a href="#mapa" data-i18n="nav.ecosystem">Ecosystem</a></li>
+            <li><a href="#videos" data-i18n="nav.videos">Videos</a></li>
+            <li><a href="#comunidad" data-i18n="nav.testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title" data-i18n="footer.col_platform">Platform</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#planes" data-i18n="nav.pricing">Subscription Plans</a></li>
+            <li><a href="#faq" data-i18n="nav.faq">Frequently Asked Questions</a></li>
+            <li><a href="#terms-modal" class="btn-open-terms" data-i18n="footer.terms">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title" data-i18n="footer.col_coverage">Coverage</h4>
+          <p class="footer-coverage-text" data-i18n="footer.coverage_desc">Metropolitan Lima & Callao · Active monitoring for late-night and dawn shifts.</p>
+          <div class="footer-status-pill">
+            <span class="status-pulse-dot" aria-hidden="true"></span>
+            <span data-i18n="footer.status">24h Services Operational</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-bottom-left">
+          <p class="footer-copy" data-i18n="footer.copy">
+            © 2026 <strong>Noxway by Noctiva</strong>. All rights reserved.
+          </p>
+          <p class="footer-academic" data-i18n="footer.academic">Comprehensive nighttime safety, commute monitoring, and 24h community network.</p>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="#terms-modal" class="btn-open-terms ethics-pill-link" data-i18n="footer.terms_ethics">
+            Code of Ethics & Terms of Service (ACM/IEEE · CIP)
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="terms-modal-overlay" id="terms-modal" role="dialog" aria-modal="true" aria-labelledby="modal-terms-title" hidden>
+    <div class="terms-modal-box">
+
+      <div class="terms-modal-header">
+        <div class="modal-header-text">
+          <span class="modal-badge" data-i18n="terms.badge">Regulatory Compliance & Ethics</span>
+          <h2 id="modal-terms-title" class="modal-title" data-i18n="terms.title">Terms of Service & Code of Ethics</h2>
+        </div>
+        <button type="button" class="btn-close-modal" id="btn-close-modal-x" aria-label="Cerrar términos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="terms-modal-body">
+        <p class="modal-intro" data-i18n="terms.intro">
+          This agreement governs the use of Noxway by Noctiva. It explicitly embodies the professional and ethical standards prescribed by the ACM/IEEE Software Engineering Code of Ethics and the Colegio de Ingenieros del Perú (CIP).
+        </p>
+
+        <section class="modal-clause">
+          <h3 class="clause-heading" data-i18n="terms.sec1_h">1. Public Interest & Human Well-Being (ACM/IEEE Principle 1 / CIP Art. 1)</h3>
+          <p class="clause-text" data-i18n="terms.sec1_p">
+            Noctiva commits to engineering software that preserves the physical integrity, dignity, and peace of mind of night-shift workers and their families. All algorithmic decisions prioritize user safety above commercial gain or engagement metrics.
+          </p>
+        </section>
+
+        <section class="modal-clause">
+          <h3 class="clause-heading" data-i18n="terms.sec2_h">2. Geolocation Privacy & Restricted Data Collection (ACM/IEEE Principle 2 & 3)</h3>
+          <p class="clause-text" data-i18n="terms.sec2_p">
+            User telemetry is collected strictly on an opt-in basis and exclusively while a commute check-in is active. Once safe arrival is confirmed, tracking terminates immediately. Coordinate logs are encrypted, never sold, and never shared with third-party advertisers.
+          </p>
+        </section>
+
+        <section class="modal-clause">
+          <h3 class="clause-heading" data-i18n="terms.sec3_h">3. Companion View & Consent Protocols</h3>
+          <p class="clause-text" data-i18n="terms.sec3_p">
+            Trusted contacts are invited exclusively by the worker. The companion view provides status visibility without invasive surveillance. Both parties may revoke permissions at any moment without penalty.
+          </p>
+        </section>
+
+        <section class="modal-clause">
+          <h3 class="clause-heading" data-i18n="terms.sec4_h">4. Non-Replacement of Emergency Services (ACM/IEEE Principle 4)</h3>
+          <p class="clause-text" data-i18n="terms.sec4_p">
+            Noxway is a preventative and mutual-aid tool. It does not replace official national emergency response authorities (PNP 105, Bomberos 116, SAMU 106). In life-threatening emergencies, users are urged to contact emergency dispatch directly.
+          </p>
+        </section>
+
+        <section class="modal-clause">
+          <h3 class="clause-heading" data-i18n="terms.sec5_h">5. Open-Source Transparency & Academic Integrity (CIP)</h3>
+          <p class="clause-text" data-i18n="terms.sec5_p">
+            This project complies with open-source licensing principles, rigorous documentation standards, and ethical peer review in accordance with international software engineering guidelines.
+          </p>
+        </section>
+      </div>
+
+      <div class="terms-modal-footer" style="justify-content: flex-end;">
+        <button type="button" class="btn-hero btn-primary-hero btn-close-modal-action" id="btn-close-modal-bottom">
+          <span data-i18n="terms.close">I Understand & Accept</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
