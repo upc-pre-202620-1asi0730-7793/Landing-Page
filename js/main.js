@@ -305,8 +305,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const pricingCtaText = document.getElementById('pricing-cta-text');
   const formPlanLabel = document.getElementById('form-plan-label');
   const selectedPlanInput = document.getElementById('selected-plan-input');
-  const btnPricingCta = document.getElementById('btn-pricing-cta');
-
   let currentBillingCycle = 'monthly';
 
   function updatePricingDisplay() {
@@ -402,15 +400,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  if (btnPricingCta) {
-    btnPricingCta.addEventListener('click', () => {
-      setTimeout(() => {
-        const nameField = document.getElementById('full-name');
-        if (nameField) nameField.focus();
-      }, 450);
-    });
-  }
 
   const faqButtons = document.querySelectorAll('.faq-question-btn');
 
@@ -517,18 +506,6 @@ document.addEventListener('DOMContentLoaded', () => {
       input.addEventListener('change', () => {
         const group = input.closest('.linear-field-group');
         if (group) group.classList.remove('has-error');
-      });
-    });
-
-    const roleTargetLinks = document.querySelectorAll('[data-role-target]');
-    roleTargetLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        const targetRole = link.getAttribute('data-role-target');
-        if (roleSelect && targetRole) {
-          roleSelect.value = targetRole;
-          const group = roleSelect.closest('.linear-field-group');
-          if (group) group.classList.remove('has-error');
-        }
       });
     });
 
