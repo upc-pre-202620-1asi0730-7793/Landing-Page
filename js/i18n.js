@@ -155,10 +155,17 @@
       'footer.brand_desc': "Safety for day- and night-shift workers, active commute monitoring, and a community services map shared with trusted contacts across Metropolitan Lima.",
       'footer.col_nav': 'Navigation',
       'footer.col_platform': 'Platform',
+      'footer.col_legal': 'Legal & Security',
       'footer.col_coverage': 'Coverage',
       'footer.coverage_desc': "Metropolitan Lima & Callao · Support for day and night commutes.",
       'footer.status': "Services by Opening Hours",
       'footer.terms': 'Terms of Service',
+      'footer.legal_terms': 'Terms of Service',
+      'footer.legal_privacy': 'Data Privacy Policy',
+      'footer.legal_accessibility': 'Web Accessibility (WCAG 2.1 AA)',
+      'footer.legal_consent': 'Informed Consent',
+      'footer.legal_security': 'End-to-End Encryption',
+      'footer.join_network': 'Join the Safe Network',
       'footer.terms_ethics': 'Code of Ethics & Terms of Service (ACM/IEEE · CIP)',
       'footer.copy': '© 2026 Noxway by Noctiva. All rights reserved.',
       'footer.academic': "Safety for every shift, commute monitoring, and a community services map.",
@@ -176,6 +183,7 @@
       'terms.sec4_p': 'Noxway is a preventative and mutual-aid tool. It does not replace official national emergency response authorities (PNP 105, Bomberos 116, SAMU 106). In life-threatening emergencies, users are urged to contact emergency dispatch directly.',
       'terms.sec5_h': '5. Open-Source Transparency & Academic Integrity (CIP)',
       'terms.sec5_p': 'This project complies with open-source licensing principles, rigorous documentation standards, and ethical peer review in accordance with international software engineering guidelines.',
+      'terms.full_link': 'Read full Terms & Legal Center →',
       'terms.close': 'I Understand & Accept'
     },
 
@@ -332,10 +340,17 @@
       'footer.brand_desc': "Seguridad para trabajadores de turnos diurnos y nocturnos, monitoreo de trayectos y mapa comunitario de servicios para acompañarlos junto a sus contactos de confianza.",
       'footer.col_nav': 'Navegación',
       'footer.col_platform': 'Plataforma',
+      'footer.col_legal': 'Legal y Seguridad',
       'footer.col_coverage': 'Cobertura',
       'footer.coverage_desc': "Lima Metropolitana y Callao · Acompañamiento para trayectos diurnos y nocturnos.",
       'footer.status': "Servicios según su horario",
       'footer.terms': 'Términos y Condiciones',
+      'footer.legal_terms': 'Términos y Condiciones',
+      'footer.legal_privacy': 'Política de Privacidad',
+      'footer.legal_accessibility': 'Accesibilidad Web (WCAG 2.1 AA)',
+      'footer.legal_consent': 'Consentimiento Informado',
+      'footer.legal_security': 'Cifrado de Extremo a Extremo',
+      'footer.join_network': 'Unirme a la Red Segura',
       'footer.terms_ethics': 'Código Ético Profesional y Términos de Servicio (ACM/IEEE · CIP)',
       'footer.copy': '© 2026 Noxway by Noctiva. Todos los derechos reservados.',
       'footer.academic': "Seguridad para cada turno, monitoreo de trayectos y mapa comunitario de servicios.",
@@ -353,6 +368,7 @@
       'terms.sec4_p': 'Noxway es una herramienta preventiva y comunitaria. En situaciones de delito inminente o peligro vital, el usuario o acompañante debe comunicarse de inmediato con las autoridades oficiales del Estado peruano (PNP 105, Bomberos 116, SAMU 106).',
       'terms.sec5_h': '5. Transparencia y Responsabilidad Académica (CIP)',
       'terms.sec5_p': 'Iniciativa orientada a promover el rigor técnico, la trazabilidad del código y el compromiso con el desarrollo social bajo estándares de ingeniería de software y deontología profesional.',
+      'terms.full_link': 'Ver Términos y Centro Legal completo →',
       'terms.close': 'Entendido y Aceptar'
     }
   };
@@ -497,6 +513,8 @@
     let savedLang = 'en_US';
     try {
       savedLang = localStorage.getItem('noxway_lang') || 'en_US';
+      if (savedLang === 'en') savedLang = 'en_US';
+      if (savedLang === 'es') savedLang = 'es_419';
     } catch (e) {
       savedLang = 'en_US';
     }
