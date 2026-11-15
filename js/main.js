@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
         role: 'Private Security · 38 yrs old',
         quote: '“I used to leave at 6:00 a.m. dreading the desolate bus stop. Now I know which avenues are lit up and I return home without fear.”',
         location: 'Usual route: Los Olivos ⇄ Downtown Lima',
-        metric: '100% of night commutes safely confirmed on time'
+        metric: '100% of commutes safely confirmed on time'
       },
       {
         indexStr: '02',
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         role: 'On-Duty Nurse · 29 yrs old',
         quote: '“Finding a trustworthy open pharmacy or hot meal at 3:00 a.m. used to be impossible in Lima. The Noxway community protects all of us.”',
         location: 'Emergency Hospital · Central Lima',
-        metric: 'Over 15 verified 24h services reported'
+        metric: 'Over 15 verified nearby services reported'
       }
     ];
   }
