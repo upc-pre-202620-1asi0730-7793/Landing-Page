@@ -1055,7 +1055,18 @@
           <ul class="footer-nav-list">
             <li><a href="#planes" data-i18n="nav.pricing">Subscription Plans</a></li>
             <li><a href="#faq" data-i18n="nav.faq">Frequently Asked Questions</a></li>
-            <li><a href="#terms-modal" class="btn-open-terms" data-i18n="footer.terms">Terms of Service</a></li>
+            <li><a href="#registro" data-i18n="footer.join_network">Join the Safe Network</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title" data-i18n="footer.col_legal">Legal &amp; Security</h4>
+          <ul class="footer-nav-list">
+            <li><a href="terms.html" data-i18n="footer.legal_terms">Terms of Service</a></li>
+            <li><a href="privacy.html" data-i18n="footer.legal_privacy">Data Privacy Policy</a></li>
+            <li><a href="accessibility.html" data-i18n="footer.legal_accessibility">Web Accessibility (WCAG 2.1 AA)</a></li>
+            <li><a href="consent.html" data-i18n="footer.legal_consent">Informed Consent</a></li>
+            <li><a href="security.html" data-i18n="footer.legal_security">End-to-End Encryption</a></li>
           </ul>
         </div>
 
@@ -1078,8 +1089,20 @@
           <p class="footer-academic" data-i18n="footer.academic">Safety for every shift, commute monitoring, and a community services map.</p>
         </div>
         <div class="footer-bottom-right">
+          <div class="footer-lang-wrap">
+            <div class="lang-switcher" role="group" aria-label="Select Language">
+              <svg class="footer-lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <button type="button" class="lang-btn active" data-lang="en_US" aria-pressed="true">EN</button>
+              <span class="lang-sep" aria-hidden="true">|</span>
+              <button type="button" class="lang-btn" data-lang="es_419" aria-pressed="false">ES</button>
+            </div>
+          </div>
           <a href="#terms-modal" class="btn-open-terms ethics-pill-link" data-i18n="footer.terms_ethics">
-            Code of Ethics & Terms of Service (ACM/IEEE · CIP)
+            Code of Ethics &amp; Terms of Service (ACM/IEEE · CIP)
           </a>
         </div>
       </div>
@@ -1092,15 +1115,22 @@
 
       <div class="terms-modal-header">
         <div class="modal-header-text">
-          <span class="modal-badge" data-i18n="terms.badge">Regulatory Compliance & Ethics</span>
-          <h2 id="modal-terms-title" class="modal-title" data-i18n="terms.title">Terms of Service & Code of Ethics</h2>
+          <span class="modal-badge" data-i18n="terms.badge">Regulatory Compliance &amp; Ethics</span>
+          <h2 id="modal-terms-title" class="modal-title" data-i18n="terms.title">Terms of Service &amp; Code of Ethics</h2>
         </div>
-        <button type="button" class="btn-close-modal" id="btn-close-modal-x" aria-label="Cerrar términos">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button>
+        <div class="modal-header-actions">
+          <div class="lang-switcher" role="group" aria-label="Select Language">
+            <button type="button" class="lang-btn active" data-lang="en_US" aria-pressed="true">EN</button>
+            <span class="lang-sep" aria-hidden="true">|</span>
+            <button type="button" class="lang-btn" data-lang="es_419" aria-pressed="false">ES</button>
+          </div>
+          <button type="button" class="btn-close-modal" id="btn-close-modal-x" aria-label="Cerrar términos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
       </div>
 
       <div class="terms-modal-body">
@@ -1144,9 +1174,12 @@
         </section>
       </div>
 
-      <div class="terms-modal-footer" style="justify-content: flex-end;">
+      <div class="terms-modal-footer">
+        <div class="modal-footer-links">
+          <a href="terms.html" class="link-full-terms" data-i18n="terms.full_link">Read full Terms &amp; Legal Center →</a>
+        </div>
         <button type="button" class="btn-hero btn-primary-hero btn-close-modal-action" id="btn-close-modal-bottom">
-          <span data-i18n="terms.close">I Understand & Accept</span>
+          <span data-i18n="terms.close">I Understand &amp; Accept</span>
         </button>
       </div>
 
