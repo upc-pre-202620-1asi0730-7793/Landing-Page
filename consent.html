@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noxway | Informed Consent &amp; Companion View Protocol</title>
+  <link rel="icon" type="image/png" href="assets/images/LogoNovctiva1.png">
+  <link rel="apple-touch-icon" href="assets/images/LogoNovctiva1.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="legal-page-body" data-page="consent">
+
+  <header class="legal-topbar" role="banner">
+    <div class="legal-topbar-inner">
+      <a href="index.html" class="brand-link" aria-label="Noxway Home">
+        <div class="brand-row">
+          <img src="assets/images/LogoNovctiva1.png" alt="Noxway Logo" class="brand-icon-img">
+          <span class="brand-name">Noxway</span>
+        </div>
+        <span class="brand-tagline">by Noctiva</span>
+      </a>
+
+      <div class="legal-topbar-actions">
+        <button class="lang-selector-btn" id="langToggleBtn" aria-label="Switch language to Spanish" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span class="lang-badge lang-en active">EN</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-badge lang-es">ES</span>
+        </button>
+
+        <a class="legal-home-btn" id="homeLink" href="index.html">← Back to Home</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal-shell">
+    <nav class="legal-nav-pills" aria-label="Legal Documentation Navigation">
+      <a href="terms.html" class="legal-nav-pill" data-en="Terms of Service" data-es="Términos y Condiciones">Terms of Service</a>
+      <a href="privacy.html" class="legal-nav-pill" data-en="Data Privacy Policy" data-es="Política de Privacidad">Data Privacy Policy</a>
+      <a href="accessibility.html" class="legal-nav-pill" data-en="Web Accessibility (WCAG 2.1)" data-es="Accesibilidad Web (WCAG 2.1)">Web Accessibility (WCAG 2.1)</a>
+      <a href="consent.html" class="legal-nav-pill active" data-en="Informed Consent" data-es="Consentimiento Informado">Informed Consent</a>
+      <a href="security.html" class="legal-nav-pill" data-en="End-to-End Encryption" data-es="Cifrado y Seguridad">End-to-End Encryption</a>
+    </nav>
+
+    <div class="legal-card">
+      <div class="lang-block active" data-lang="en">
+        <div class="legal-header-meta">
+          <span class="legal-badge-pill">English · Mutual Trust &amp; Voluntary Autonomy</span>
+          <span class="legal-doc-meta">Companion View Consent Protocol · Law No. 29733</span>
+        </div>
+
+        <h1 class="legal-main-title">Informed Consent &amp; Companion View Protocol</h1>
+
+        <div class="legal-lead-callout">
+          Before starting any commute check-in or linking a trusted contact on <strong>Noxway by Noctiva</strong>, both the worker and their companion are transparently informed about what information is shared, when it is visible, and how permissions can be revoked at any moment.
+        </div>
+
+        <div class="legal-clauses-grid">
+          <section class="legal-clause-item">
+            <div class="legal-clause-head">
+              <span class="legal-clause-num">01</span>
+              <h2 class="legal-clause-title">Voluntary Opt-In Commute Check-In</h2>
+            </div>
+            <p>
+              Every monitoring session requires explicit, manual activation by the worker when beginning a commute before or after their shift. No background location sharing occurs outside an active, user-initiated trip.
+            </p>
+          </section>
+
+          <section class="legal-clause-item">
+            <div class="legal-clause-head">
+              <span class="legal-clause-num">02</span>
+              <h2 class="legal-clause-title">Scope of Data Shared in Companion View</h2>
+            </div>
+            <ul class="legal-clause-list">
+              <li><strong>Active Route Status &amp; ETA:</strong> Departure time, destination checkpoint, and dynamic estimated time of arrival.</li>
+              <li><strong>Last Verified GPS Pulse:</strong> Shared only during the active commute or if an unconfirmed delay exceeds the safety tolerance buffer.</li>
+              <li><strong>Manual SOS &amp; Arrival Confirmation:</strong> Instant notification when the worker confirms safe arrival or triggers an emergency alert.</li>
+              <li><strong>Private Rest Log Exclusion:</strong> Personal circadian sleep records and account credentials are never exposed in Companion View unless shared in a Family &amp; Crew group by choice.</li>
+            </ul>
+          </section>
+
+          <section class="legal-clause-item">
+            <div class="legal-clause-head">
+              <span class="legal-clause-num">03</span>
+              <h2 class="legal-clause-title">Trusted Contact Invitation &amp; Bilateral Revocation</h2>
+            </div>
+            <p>
+              Trusted contacts are invited solely by the worker via an encrypted web link (WhatsApp/SMS). Either the worker or the trusted contact may pause, unlink, or revoke accompaniment permissions immediately with a single tap and without penalty.
+            </p>
+          </section>
+
+          <section class="legal-clause-item">
+            <div class="legal-clause-head">
+              <span class="legal-clause-num">04</span>
+              <h2 class="legal-clause-title">Purpose of Processing &amp; Community Safety</h2>
+            </div>
+            <p>
+              Data processed under this consent serves exclusively to accompany workers during day and night commutes, alert loved ones of unexpected delays, and maintain accurate opening hours and safety ratings on the Community Services Map.
+            </p>
+          </section>
+        </div>
+
+        <div class="legal-compliance-strip">
+          <div class="legal-compliance-text">
+            <strong>Autonomy Principle:</strong> 100% Opt-In Check-In · Instant Revocation · Zero Unauthorized Surveillance.
+          </div>
+          <a href="index.html" class="legal-home-btn">Return to Noxway</a>
+        </div>
+      </div>
+
+      <div class="lang-block" data-lang="es">
+        <div class="legal-header-meta">
+          <span class="legal-badge-pill">Español · Confianza Mutua y Autonomía Voluntaria</span>
+          <span class="legal-doc-meta">Protocolo Companion View · Ley N.° 29733</span>
+        </div>
+
+        <h1 class="legal-main-title">Consentimiento Informado y Protocolo Companion View</h1>
+
+        <div class="legal-lead-callout">
+          Antes de iniciar cualquier check-in de trayecto o vincular a un contacto de confianza en <strong>Noxway by Noctiva</strong>, tanto el trabajador como su acompañante son informados con total transparencia sobre qué datos se comparten, en qué momento son visibles y cómo revocar los permisos al instante.
+        </div>
+
+        <div class="legal-clauses-grid">
+          <section class="legal-clause-item">
+            <div class="legal-clause-head">
+              <span class="legal-clause-num">01</span>
+              <h2 class="legal-clause-title">Activación Voluntaria (Opt-In) por Trayecto</h2>
+            </div>
+            <p>
+              Toda sesión de acompañamiento requiere la activación manual y expresa del trabajador al iniciar su desplazamiento antes o después de su turno laboral. No existe compartición de ubicación fuera de un trayecto activo iniciado por el propio usuario.
+            </p>
+          </section>
+
+          <section class="legal-clause-item">
+            <div class="legal-clause-head">
+              <span class="legal-clause-num">02</span>
+              <h2 class="legal-clause-title">Qué Información se Comparte en Companion View</h2>
+            </div>
+            <ul class="legal-clause-list">
+              <li><strong>Estado del Trayecto y Tiempo Estimado (ETA):</strong> Hora de inicio, punto de destino y cálculo dinámico de llegada.</li>
+              <li><strong>Último Pulso GPS Verificado:</strong> Visible únicamente durante el trayecto activo o si se supera el margen de tolerancia ante una demora no confirmada.</li>
+              <li><strong>Confirmación de Llegada y Alerta SOS:</strong> Aviso inmediato cuando el trabajador confirma que llegó a salvo o activa una alerta preventiva.</li>
+              <li><strong>Reserva de Datos Personales:</strong> Los registros individuales de sueño y las credenciales de cuenta permanecen privados.</li>
+            </ul>
+          </section>
+
+          <section class="legal-clause-item">
+            <div class="legal-clause-head">
+              <span class="legal-clause-num">03</span>
+              <h2 class="legal-clause-title">Vinculación de Contactos y Revocación Bilateral Inmediata</h2>
+            </div>
+            <p>
+              Los contactos de confianza son invitados exclusivamente por el trabajador mediante un enlace web cifrado (WhatsApp o SMS). Tanto el trabajador como el acompañante pueden pausar, desvincular o revocar el permiso en cualquier momento con un solo toque y sin penalidad alguna.
+            </p>
+          </section>
+
+          <section class="legal-clause-item">
+            <div class="legal-clause-head">
+              <span class="legal-clause-num">04</span>
+              <h2 class="legal-clause-title">Finalidad del Tratamiento y Cuidado Comunitario</h2>
+            </div>
+            <p>
+              La información autorizada bajo este consentimiento se emplea únicamente para acompañar los trayectos diurnos y nocturnos, notificar preventivamente ante demoras inusuales y mantener actualizados los horarios de servicios cercanos en el Mapa Comunitario.
+            </p>
+          </section>
+        </div>
+
+        <div class="legal-compliance-strip">
+          <div class="legal-compliance-text">
+            <strong>Principio de Autonomía:</strong> Check-In 100% Voluntario · Revocación Instantánea · Cero Vigilancia Invasiva.
+          </div>
+          <a href="index.html" class="legal-home-btn">Volver a Noxway</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="legal-page-footer" role="contentinfo">
+    <div class="legal-page-footer-inner">
+      <span data-en="© 2026 Noxway by Noctiva. All rights reserved." data-es="© 2026 Noxway by Noctiva. Todos los derechos reservados.">© 2026 Noxway by Noctiva. All rights reserved.</span>
+      <span data-en="Metropolitan Lima & Callao · Safe Commute Ecosystem" data-es="Lima Metropolitana y Callao · Ecosistema de Trayecto Seguro">Metropolitan Lima &amp; Callao · Safe Commute Ecosystem</span>
+    </div>
+  </footer>
+
+  <script src="js/legal.js"></script>
+</body>
+</html>
