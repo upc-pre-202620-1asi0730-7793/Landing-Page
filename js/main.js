@@ -106,11 +106,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const tabVideoTeam = document.getElementById('tab-video-team');
   const panelVideoProduct = document.getElementById('panel-video-product');
   const panelVideoTeam = document.getElementById('panel-video-team');
+  const productDemoVideo = document.getElementById('product-demo-video');
+  const productVideoFallback = document.getElementById('product-video-fallback');
+
+  if (productDemoVideo && productVideoFallback) {
+    productDemoVideo.addEventListener('error', () => {
+      productVideoFallback.removeAttribute('hidden');
+    });
+  }
 
   function switchVideoTab(activeTab) {
     if (!tabVideoProduct || !tabVideoTeam || !panelVideoProduct || !panelVideoTeam) return;
 
     if (activeTab === 'team') {
+      if (productDemoVideo && !productDemoVideo.paused) {
+        productDemoVideo.pause();
+      }
+
       tabVideoTeam.classList.add('active');
       tabVideoTeam.setAttribute('aria-selected', 'true');
       tabVideoProduct.classList.remove('active');
