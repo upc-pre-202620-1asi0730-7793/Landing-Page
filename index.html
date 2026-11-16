@@ -336,24 +336,37 @@
           <article class="video-display-panel active" id="panel-video-product" role="tabpanel" aria-labelledby="tab-video-product">
             <div class="video-player-box">
               <div class="video-embed-container">
-                <iframe
-                  class="video-iframe"
-                  src="https://www.youtube.com"
+                <video
+                  id="product-demo-video"
+                  class="video-iframe video-player-native"
+                  src="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241i469_upc_edu_pe/IQDK5el_0bgmQINN3hWW4TghAeWnJiiVNPsG6m_-Gggdv5E?e=veIOUI&download=1"
                   title="Noxway - Video About the Product"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                  loading="lazy"
-                ></iframe>
+                  controls
+                  preload="metadata"
+                  playsinline
+                ></video>
+                <div class="video-fallback-overlay" id="product-video-fallback" hidden>
+                  <div class="video-fallback-card">
+                    <span class="video-badge" data-i18n="videos.prod_badge">Official Product Tour</span>
+                    <h4 class="video-fallback-title" data-i18n="videos.prod_fallback_title">Watch About the Product on Microsoft Stream</h4>
+                    <p class="video-fallback-desc" data-i18n="videos.prod_fallback_desc">Your browser blocked embedded SharePoint playback. Open the video directly in Microsoft Stream to watch the full demo.</p>
+                    <a
+                      href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241i469_upc_edu_pe/IQDK5el_0bgmQINN3hWW4TghAeWnJiiVNPsG6m_-Gggdv5E?e=veIOUI"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="video-fallback-btn"
+                      data-i18n="videos.prod_fallback_cta"
+                    >Watch on Microsoft Stream</a>
+                  </div>
+                </div>
               </div>
               <div class="video-meta-bar">
                 <div class="meta-left">
                   <span class="video-badge" data-i18n="videos.prod_badge">Official Product Tour</span>
-                  <span class="video-duration" data-i18n="videos.prod_time">Duration: 2 min 45 sec</span>
+                  <span class="video-duration" data-i18n="videos.prod_time">Duration: 3 min 51 sec</span>
                 </div>
                 <div class="meta-links">
-                  <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="video-ext-link" data-i18n="videos.prod_watch_yt">Watch on YouTube</a>
-                  <span class="meta-sep" aria-hidden="true">·</span>
-                  <a href="https://web.microsoftstream.com" target="_blank" rel="noopener noreferrer" class="video-ext-link" data-i18n="videos.prod_watch_stream">Microsoft Stream</a>
+                  <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241i469_upc_edu_pe/IQDK5el_0bgmQINN3hWW4TghAeWnJiiVNPsG6m_-Gggdv5E?e=veIOUI" target="_blank" rel="noopener noreferrer" class="video-ext-link" data-i18n="videos.prod_watch_stream">Watch on Microsoft Stream</a>
                 </div>
               </div>
             </div>
