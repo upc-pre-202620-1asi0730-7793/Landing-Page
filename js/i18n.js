@@ -68,7 +68,7 @@
       'videos.team_badge': 'Academic & Agile Retrospective',
       'videos.team_title': 'Team Noctiva: Process, Values & ABET Outcome 3',
       'videos.team_desc': 'Meet the Noctiva engineering team. Learn about our design thinking process, Lean UX experiments, and collective commitment to user well-being.',
-      'videos.team_time': 'Duration: 5 min 15 sec',
+      'videos.team_time': 'Duration: 8 min 10 sec',
       'videos.team_watch_yt': 'Watch on YouTube',
       'videos.team_watch_stream': 'Microsoft Stream',
 
@@ -253,7 +253,7 @@
       'videos.team_badge': 'Retrospectiva Ágil & Académica',
       'videos.team_title': 'Equipo Noctiva: Proceso, Valores y ABET Outcome 3',
       'videos.team_desc': "Conoce al equipo de desarrollo e ingeniería de Noctiva, sus metodologías ágiles, Lean UX y su compromiso con los trabajadores de turnos diurnos y nocturnos y sus contactos de confianza.",
-      'videos.team_time': 'Duración: 5 min 15 seg',
+      'videos.team_time': 'Duración: 8 min 10 seg',
       'videos.team_watch_yt': 'Ver en YouTube',
       'videos.team_watch_stream': 'Microsoft Stream',
 
